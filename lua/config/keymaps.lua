@@ -17,4 +17,8 @@ local function show_runnables()
   vim.cmd.RustLsp("runnables")
 end
 
+-- Run and debug
 keymap.set("n", "<leader>r", show_runnables, { desc = "Show runnables" })
+
+-- nvim config
+keymap.set("n", "<leader>cg", LazyVim.pick.config_files(), { desc = "Go to LazyVim config" })
