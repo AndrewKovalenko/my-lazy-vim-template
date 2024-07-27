@@ -6,6 +6,7 @@ local keymap = require("vim.keymap")
 -- Personal shortcuts
 keymap.set("i", "jj", "<ESC>", { desc = "Exit insert mode" })
 keymap.set("n", "\\", ":noh <CR>", { silent = true, desc = "Hide search highlights" })
+keymap.set("n", "<leader>of", ":Neotree<Space>", { silent = false, desc = "Open folder" })
 
 -- iTerm needs to send ]50 escape sequanse to make this work
 keymap.set({ "i", "x", "n", "s" }, "<D-s>", "<ESC> :w <CR>", { desc = "Save file" })
